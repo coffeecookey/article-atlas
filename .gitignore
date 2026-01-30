@@ -1,2 +1,5 @@
 .env
 .DS_Store
+test_till_extract.py
+test_graph.py
+test_api.py
