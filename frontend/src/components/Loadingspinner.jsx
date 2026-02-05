@@ -24,29 +24,6 @@ const LoadingSpinner = ({ message = 'Processing...', progress }) => {
             <span className="progress-text">{progress}%</span>
           </div>
         )}
-
-        <div className="loading-steps">
-          <div className={`step ${progress >= 20 ? 'active' : ''}`}>
-            <span className="step-icon">📄</span>
-            <span className="step-label">Scraping</span>
-          </div>
-          <div className={`step ${progress >= 40 ? 'active' : ''}`}>
-            <span className="step-icon">🧹</span>
-            <span className="step-label">Cleaning</span>
-          </div>
-          <div className={`step ${progress >= 60 ? 'active' : ''}`}>
-            <span className="step-icon">✂️</span>
-            <span className="step-label">Chunking</span>
-          </div>
-          <div className={`step ${progress >= 80 ? 'active' : ''}`}>
-            <span className="step-icon">🤖</span>
-            <span className="step-label">Extracting</span>
-          </div>
-          <div className={`step ${progress >= 100 ? 'active' : ''}`}>
-            <span className="step-icon">📊</span>
-            <span className="step-label">Building Graph</span>
-          </div>
-        </div>
       </div>
     </div>
   );

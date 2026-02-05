@@ -21,7 +21,7 @@ function App() {
 
     try {
       setProgress(10);
-      setCurrentStep('Sending request to backend...');
+      setCurrentStep('graph may take a few minutes to load...please do not refresh');
 
       const response = await fetch('http://localhost:8000/api/process', {
         method: 'POST',
@@ -80,7 +80,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>📊 Knowledge Graph Generator</h1>
+        <h1>Knowledge Graph Generator</h1>
         <p>Extract entities and relationships from any article</p>
       </header>
 

@@ -362,28 +362,28 @@ const GraphVisualization = ({ graphData, loading, error }) => {
               onClick={() => changeLayout('cose')}
               title="Force-directed layout"
             >
-              🌐 Force
+              Force
             </button>
             <button 
               className={`control-btn ${layout === 'circle' ? 'active' : ''}`}
               onClick={() => changeLayout('circle')}
               title="Circular layout"
             >
-              ⭕ Circle
+              Circle
             </button>
             <button 
               className={`control-btn ${layout === 'grid' ? 'active' : ''}`}
               onClick={() => changeLayout('grid')}
               title="Grid layout"
             >
-              ▦ Grid
+              Grid
             </button>
             <button 
               className={`control-btn ${layout === 'breadthfirst' ? 'active' : ''}`}
               onClick={() => changeLayout('breadthfirst')}
               title="Hierarchical layout"
             >
-              🌳 Tree
+              Tree
             </button>
           </div>
         </div>

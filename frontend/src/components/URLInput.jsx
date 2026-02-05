@@ -91,33 +91,6 @@ const URLInput = ({ onSubmit, loading }) => {
             </div>
           )}
         </form>
-
-        <div className="example-urls">
-          <p className="example-label">Try these examples:</p>
-          <div className="example-buttons">
-            <button 
-              className="example-button"
-              onClick={() => setUrl('https://www.bbc.com/news/technology')}
-              disabled={loading}
-            >
-              BBC Tech News
-            </button>
-            <button 
-              className="example-button"
-              onClick={() => setUrl('https://en.wikipedia.org/wiki/Artificial_intelligence')}
-              disabled={loading}
-            >
-              Wikipedia AI
-            </button>
-            <button 
-              className="example-button"
-              onClick={() => setUrl('https://www.theguardian.com/science')}
-              disabled={loading}
-            >
-              Guardian Science
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );
