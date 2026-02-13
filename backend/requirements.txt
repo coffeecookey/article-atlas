@@ -1,16 +1,35 @@
-fastapi
-uvicorn[standard]
-pydantic
-pydantic-settings
+# Core Web Framework
+fastapi>=0.115.0,<1.0.0
+uvicorn[standard]>=0.34.0,<1.0.0
 
-# Scraping
-trafilatura
+# Data Validation
+pydantic>=2.10.0,<3.0.0
 
-# NLP
-spacy
-rapidfuzz
+# Web Scraping
+requests>=2.32.0,<3.0.0
+trafilatura>=2.0.0,<3.0.0
+lxml>=5.0.0
+
+# Text Processing
+spacy>=3.8.0,<4.0.0
+python-dateutil>=2.9.0
+
+# Text Chunking
+langchain-text-splitters>=0.3.0
+tiktoken>=0.8.0
+
+# LLM
+google-generativeai>=0.8.0
 
 # Graph
-networkx
+networkx>=3.4,<4.0.0
 
-# LLM integration to be added 
+# Entity Normalization
+rapidfuzz>=3.10.0,<4.0.0
+sentence-transformers>=3.0.0
+numpy>=2.0.0
+
+# Utilities
+python-dotenv>=1.0.0,<2.0.0
+tenacity>=9.0.0,<10.0.0
+python-multipart>=0.0.18
